@@ -1,0 +1,206 @@
+<!-- 
+    Josh Vahlberg
+    CPSC 332
+    Homework 3
+    Last Modified: 10/6/2022
+ -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Josh Vahlberg CV</title>
+        <link rel="icon" href="bonfire.png" />
+        <style>
+            body {
+                background-color: rgb(90, 90, 90);
+            }
+            .container {
+                display: grid;
+                grid-template-columns: 25% auto;
+                grid-template-rows: auto;
+                grid-template-areas: "nav nav" "intro main";
+                gap: 0.75%;
+                padding: 0.75%;
+            }
+            .header {
+                background-color: rgb(156, 162, 162);
+                grid-area: nav;
+                padding: 1%;
+            }
+            .Intro {
+                background-color: rgb(115, 184, 143);
+                grid-area: intro;
+                justify-content: center;
+                padding: 5%;
+            }
+            .Main {
+                background-color: rgb(134, 211, 206);
+                grid-area: main;
+                padding: 1%;
+            }
+            #profile {
+                display: block;
+                margin: auto;
+                width: 100%;
+            }
+            .Intro > p {
+                margin-top: 15%;
+            }
+            #Logo {
+                float: left;
+                width: 8%;
+            }
+            #core-skils {
+                list-style-type: square;
+            }
+            #interests {
+                list-style-type: upper-roman;
+            }
+            table {
+                background-color: rgb(190, 228, 247);
+                border-collapse: collapse;
+            }
+            table th,
+            table td {
+                border: 1px solid black;
+                padding: 10px;
+            }
+            table th {
+                background-color: rgb(95, 162, 233);
+            }
+            table tr:nth-child(even) {
+                background-color: rgb(190, 247, 243);
+            }
+            #glink {
+                width: 10%;
+            }
+            #nav-links {
+                float: right
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <img src="bonfire.png" alt="Bonfire" id="Logo" />
+                <nav id="nav-links">
+                    <a href="#intro">Intro</a>
+                    &nbsp;
+                    <a href="#skills">Core Skills</a>
+                    &nbsp;
+                    <a href="#career">Career Summary</a>
+                    &nbsp;
+                    <a href="#edu">Education & Qualifications</a>
+                    &nbsp;
+                    <a href="#i-h">Interests & Hobbies</a>
+                </nav>
+            </div>
+            <div class="Intro" id="intro">
+                <h2>Josh Vahlberg</h2>
+                <h4>Gonzaga University Student</h4>
+                <img src="profile.jpg" alt="Profile Photo" id="profile" />
+                <!-- Summary Paragraph -->
+                <p id="intropara">
+                    I am Joshua Vahlberg. I am currently enrolled at Gonzaga
+                    University studying Computer Science. I am passionate about
+                    solving problems and working with other people.
+                </p>
+                <!-- UL of core skills -->
+            </div>
+            <div class="Main">
+                <div id="skills">
+                    <h2>My Core Skills</h2>
+                    <ul id="core-skils">
+                        <li>
+                            <strong>Programming languages</strong> - C++, Java,
+                            Python, and JavaScript
+                        </li>
+                        <li>
+                            <strong>Team Software Development</strong> -
+                            experience developing software obtained through
+                            coursework at GU
+                        </li>
+                        <li>
+                            <strong>Git / GitHub Experience</strong> -
+                            experience using GitHub as version control for team
+                            and personal projects.
+                        </li>
+                    </ul>
+                </div>
+                <div id="career">
+                    <h2>Career Summary</h2>
+                    <table>
+                        <tr>
+                            <th>Jobs</th>
+                            <th>Roles</th>
+                        </tr>
+                        <tr>
+                            <td>Cupertino Bike Shop</td>
+                            <td>Salesman, Basic Mechanic</td>
+                        </tr>
+                        <tr>
+                            <td>Youth Mountain Bike Camp</td>
+                            <td>Leader, Planner, and Coordinator</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="edu">
+                    <h2>Education & Qualifications</h2>
+                    <h3>Education</h3>
+                    <table>
+                        <tr>
+                            <th>Education</th>
+                            <th>Graduation Dates</th>
+                        </tr>
+                        <tr>
+                            <td>The King's Academy PSP</td>
+                            <td>May 2018</td>
+                        </tr>
+                        <tr>
+                            <td>Gonzaga University BSCS</td>
+                            <td>Ongoing</td>
+                        </tr>
+                    </table>
+                    <!-- qualifs -->
+                    <h3>Qualifications</h3>
+                    <table>
+                        <tr>
+                            <th>Relevant Skill</th>
+                            <th>Date Learned</th>
+                        </tr>
+                        <tr>
+                            <td>C++</td>
+                            <td>Spring 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>Fall 2021</td>
+                        </tr>
+                        <tr>
+                            <td>HTML & JavaScript</td>
+                            <td>Fall 2022</td>
+                        </tr>
+                        <tr>
+                            <td>GitHub</td>
+                            <td>Spring 2021</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="i-h">
+                    <h2>Interests & Hobbies</h2>
+                    <ol id="interests">
+                        <li>Mountain biking & Cyclocross</li>
+                        <li>Gaming</li>
+                    </ol>
+                    <a
+                        href="https://store.steampowered.com/app/1245620/ELDEN_RING/"
+                        ><img src="eldenring.png" alt="Elden Ring" id="glink"
+                    /></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
